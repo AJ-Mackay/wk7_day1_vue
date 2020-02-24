@@ -4,6 +4,11 @@
   font-family: serif;
 }
 
+img {
+  height: 25px;
+  width: 25px;
+}
+
 ul {
   margin: 0;
   padding: 0;

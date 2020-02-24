@@ -15,14 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     addNewItem: function (){
       this.items.push({
         name: this.newItem,
+        priority: this.priority,
         isDone: false
       });
       this.newItem = "";
       document.getElementById("high").checked = false;
       document.getElementById("low").checked = false;
     },
+    picked: function () {
+      this.priority === "true" ? true : false;
+    },
     doTask: function (index){
-      this.items[index].isDone = true;
+      this.items[index].isDone = !this.items[index].isDone;
     }
   }
 });
