@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addNewItem: function (){
       this.items.push({
         name: this.newItem,
-        priority: this.priority,
+        priority: this.picked,
         isDone: false
       });
       this.newItem = "";
@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("low").checked = false;
     },
     picked: function () {
-      this.priority === "true" ? true : false;
+      if (this.priority === "true")
+      return true;
     },
     doTask: function (index){
       this.items[index].isDone = !this.items[index].isDone;

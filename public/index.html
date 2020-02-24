@@ -8,11 +8,11 @@
   </head>
   <body>
     <div id="app">
-      <h1>ToDo's</h1>
+      <h1>To Do List</h1>
       <form @submit.prevent="addNewItem">
         <input type="text" id="new-task" v-model="newItem">
         <label for="high">High</label>
-        <input type="radio" id="high" name="priority" v-model="picked">
+        <input type="radio" id="high" name="priority">
         <label for="low">Low</label>
         <input type="radio" id="low" name="priority" v-model="picked">
         <input type="submit" value="Save task">
