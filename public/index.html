@@ -12,9 +12,9 @@
       <form @submit.prevent="addNewItem">
         <input type="text" id="new-task" v-model="newItem">
         <label for="high">High</label>
-        <input type="radio" class="high" name="priority" value="high">
+        <input type="radio" id="high" name="priority" value="high">
         <label for="low">Low</label>
-        <input type="radio" name="priority" value="low">
+        <input type="radio" id="low" name="priority" value="low">
         <input type="submit" value="Save task">
       </form>
       <ul>

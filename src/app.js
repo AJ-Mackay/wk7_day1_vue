@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         isDone: false
       });
       this.newItem = "";
+      document.getElementById("high").checked = false;
+      document.getElementById("low").checked = false;
     },
     doTask: function (index){
       this.items[index].isDone = true;
