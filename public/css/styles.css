@@ -24,15 +24,22 @@ li span {
 li.done {
   border: 2px solid #1a681e;
   font-family: cursive;
+  color: #1a681e;
 }
 
 li.notdone {
   border: 2px solid #f2360c;
   color: #f2360c;
   font-family: monospace;
+  text-transform: uppercase;
 }
 
-button {
+input[type=text] {
+  padding: 10px;
+  width: 50%;
+}
+
+input[type="submit"] {
   padding: 10px;
   background: #000;
   color: #fff;

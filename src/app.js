@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   el: "#app",
   data: {
     items: [
-      {name: "Buy shopping", isDone: false},
-      {name: "Clean bathroom", isDone: false},
-      {name: "Car's MOT", isDone: false}
+      {name: "Buy shopping", priority:true, isDone: false},
+      {name: "Clean bathroom", priority:false, isDone: false},
+      {name: "Car's MOT", priority:true, isDone: false}
     ],
     newItem: ""
   },
