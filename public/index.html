@@ -8,18 +8,17 @@
   </head>
   <body>
     <div id="app">
-      <ul>
-        <li v-for="(item, index) in items" :class="item.isDone ? 'done':'notdone'">
-          <span>{{ item.name }}</span>
-          <span v-if="item.isDone">Done</span>
-          <button v-if="!item.isDone" @click="doTask(index)">Done</button>
-        </li>
-      </ul>
       <form @submit.prevent="addNewItem">
         <label for="new-task">Add a new task:</label>
         <input type="text" id="new-task" v-model="newItem">
         <input type="submit" value="Save new task">
       </form>
+      <ul>
+        <li v-for="(item, index) in items" :class="item.isDone ? 'done':'notdone'">
+          <span v-if="item.isDone">{{ item.name }}</span>
+          <span v-if="!item.isDone" @click="doTask(index)">{{ item.name }}</span>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

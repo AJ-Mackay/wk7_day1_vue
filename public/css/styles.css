@@ -21,20 +21,15 @@ li span {
   padding: 8px;
 }
 
-li button {
-  background: #a234eb;
-  color: #000;
-  border: none;
-  padding: 10px;
-}
-
 li.done {
   border: 2px solid #1a681e;
-  color: #1a681e;
+  font-family: cursive;
 }
 
 li.notdone {
   border: 2px solid #f2360c;
+  color: #f2360c;
+  font-family: monospace;
 }
 
 button {
